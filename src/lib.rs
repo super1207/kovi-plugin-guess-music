@@ -20,7 +20,7 @@ try:
 	from openai import OpenAI
 except:
 	red_install("openai")
-	import openai
+	from openai import OpenAI
 import json
 # 我的API很慢的啦，如果你有自己的API，可以自己修改这里
 client = OpenAI(
